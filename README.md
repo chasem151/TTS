@@ -3,7 +3,7 @@ EC504 Advanced Data Structures final project
 setup/installation:
 
 >pip install -r requirements.txt
-<br>
+<br/>
 >pipwin install pyaudio
-<br>
+<br/>
 >python cleo.py -s "text to be spoken"
