@@ -5,6 +5,11 @@ EC504 Advanced Data Structures final project
 
 setup/installation:
 
+Windows Powershell:
+get-executionpolicy # if Restricted, run set-executionpolicy remotesigned
+py -m venv .env
+.env/Scripts/Activate.ps1 # activates the virtual environment
+
 > pip install -r requirements.txt
 
 <br/>
