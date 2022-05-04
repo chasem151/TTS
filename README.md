@@ -7,8 +7,16 @@ setup/installation:
 
 Windows Powershell:
 get-executionpolicy # if Restricted, run set-executionpolicy remotesigned
+
+<br/>
+
 py -m venv .env
+
+<br/>
+
 .env/Scripts/Activate.ps1 # activates the virtual environment
+
+<br/>
 
 > pip install -r requirements.txt
 
