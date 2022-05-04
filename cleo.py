@@ -6,6 +6,8 @@ import nltk
 from nltk.corpus import cmudict
 import audio as a
 import Dict
+from scipy.io.wavfile import write as wavwrite
+
 
 parser = argparse.ArgumentParser(description='text to speech')
 parser.add_argument('--speak', '-s', action="store_true", default=False, help="speaks the output audio")
@@ -140,7 +142,8 @@ if __name__ == "__main__":
     speech.concatenate_diphones()
     out.data = tmp.astype(np.int16)
     print(out.data, type(out.data))
-
+    wavwrite("output.wav", 16000, out.data)
+    
     if args.speak is True:
         out.play()
 
