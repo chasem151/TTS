@@ -6,6 +6,9 @@ EC504 Advanced Data Structures final project
 setup/installation:
 
 Windows Powershell:
+
+<br/>
+
 get-executionpolicy # if Restricted, run set-executionpolicy remotesigned
 
 <br/>
