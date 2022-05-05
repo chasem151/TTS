@@ -24,27 +24,22 @@ Future work
 Because we are only concatenating the diphones together, thus there are no tone nor emotions in the generated audio sample, in the future, we are going to trying to find a way to implement a method that can mimic the tone and emotions that a human have when reading text, in this way, the audio we generated are much smoother and closer to natural enunciation. This can be achieved with a technique known in many music producing softwares as crossfading, which lowers the amplitude of one signal to 0 while increasing the amplitude of the next signal up from 0, producing a nice blended natural sound. Using diphones instead of phones in this project seeks to utilize this characteristic of better blending sounds together because having an existing dataset of pairs of sounds is bound to sound more natural than concatenating individual sounds.
 
 
-setup/installation:
+Setup/installation:
 
 Windows Powershell:
-<br/>
 '''bash
-get-executionpolicy # if Restricted, run set-executionpolicy remotesigned
-<br/>
-
-py -m venv .env
-<br/>
-
+get-executionpolicy # if Restricted, run the following:
+set-executionpolicy remotesigned # run if Restricted in previous line
+py -m venv .env  # start virtual environment for package downloads
 .env/Scripts/Activate.ps1 # activates the virtual environment
-<br/>
-
-> pip install -r requirements.txt
-
-<br/>
-
-> pipwin install pyaudio
-
-<br/>
-
->python cleo.py -s "text to be spoken"
+py -m pip install -r requirements.txt
+pipwin install pyaudio
+py -m python cleo.py -s "text to be spoken"
+'''
+UNIX based terminals Mac, Ubuntu, CentOS, etc.
+'''bash
+python -m venv .env # start virtual environment for package downloads 
+.env/bin/activate # activates the virtual environment for UNIX based terminals (Mac, Ubuntu, CentOS, etc.)
+pip install -r requirements.txt
+python cleo.py -s "text to be spoken"
 '''
