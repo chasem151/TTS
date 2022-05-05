@@ -9,7 +9,7 @@ We are using a hashtable to store our voice file of pronunciations, with keys be
 	
 | Amortized cost|                              | Space Complexity                                     |
 | :----------   | :--------------------------- | :--------------------------------------------------- |
-| O(1)          | Diphone concentenation 🏴󠁧󠁢󠁥󠁮󠁧󠁧󠁢󠁥    | O(N)                                                 |
+| O(1)          | Diphone concentenation 🔠󠁧󠁢󠁥󠁮󠁧󠁧󠁢󠁥    | O(N)                                                 |
 | O(N*k+m)      | Aho-Corasick pattern lookup  | O(W)                                                 |
 | O(N)          | Hashing:search 🔃           | O(N*k+m)
 
